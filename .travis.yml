@@ -2,3 +2,8 @@ language: ruby
 rvm:
  - 2.2
  - jruby
+
+deploy:
+  provider: pages:git
+  token: <encrypted token>
+  edge: true # opt in to dpl v2
