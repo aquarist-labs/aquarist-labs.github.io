@@ -8,9 +8,4 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep_history: true
   on:
-    branch: main
-
-branches:
-  only:
-  - add-travis-ghpages
-  - /.*/
+    all_branches: true
