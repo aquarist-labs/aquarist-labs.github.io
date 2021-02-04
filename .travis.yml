@@ -9,3 +9,8 @@ deploy:
   keep_history: true
   on:
     branch: main
+
+branches:
+  only:
+  - add-travis-ghpages
+  - /.*/
