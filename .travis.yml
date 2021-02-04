@@ -2,3 +2,9 @@ language: ruby
 rvm:
   - 2.3
 script: "bundle exec jekyll build"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  on:
+    branch: main
