@@ -9,3 +9,5 @@ deploy:
   keep_history: true
   on:
     branch: main
+notifications:
+  slack: aquaristlabs:AEzKfnXczhB7k5AXPzLT8gyM
