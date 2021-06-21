@@ -1,0 +1,22 @@
+name: 'build'
+
+on:
+  - pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      # speeds up installation of html-proofer
+      NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - name: deps
+        run: bundle install
+      - name: build
+        run: bundle exec jekyll build
+      - name: test
+        run: bundle exec rake test
