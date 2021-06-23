@@ -46,7 +46,8 @@ layout: default
         {%- endif -%}
         <ul class="post-list">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {%- for minutes in minutes -%}
+          {%- assign sorted_minutes = minutes | sort: 'date' | reverse -%}
+          {%- for minutes in sorted_minutes -%}
           <li>
             <span class="post-meta">{{ minutes.date | date: date_format }}</span>
             <h3>
