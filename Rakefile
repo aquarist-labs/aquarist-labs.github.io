@@ -12,6 +12,7 @@ task :test do
     :check_img_http => true,
     :check_opengraph => true,
     :enforce_https => true,
+    :disable_external => true,
     :cache => {
       :timeframe => '6w'
     },
