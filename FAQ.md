@@ -51,7 +51,7 @@ environment as soon as possible so you can start hacking.
 You will be able to find the backend bits in `src/gravel`, while the frontend
 bits are located in `src/glass`.
 
-Check out our [From Zero to Hacking](https://github.com/aquarist-labs/aquarium/blob/main/doc/from-zero-to-hacking.md)
+Check out our [From Zero to Hero](https://github.com/aquarist-labs/aquarium/blob/main/doc/from-zero-to-hero.md)
 quickstart to help you get off your feet.
 
 -----------
